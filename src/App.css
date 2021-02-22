@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-image: url("./images/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
+h1 {
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  /* font-family: 'Ranchers', cursive; */
+  font-family: "Staatliches", cursive;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
 
-.App-link {
-  color: #61dafb;
+  font-size: 60px;
+
+  color: #09c;
+}
+ul {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.launches {
+  margin-top: 5%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin-bottom: -3%;
+  width: 70%;
+  margin-left: 10%;
+  font-size: 50px;
 }
+.green {
+  color: green;
+
+}
+.red {
+  color: red;
+
+}
+.details {
+  float: left;
+  margin-top: 1.7%;
+  padding: -10;
+  margin-right: 1%;
+}
+.details:hover {
+  cursor: pointer;
+}
+
+.modal {
+  background-image: url("../src/images/background.jpg");
+  background-size: cover;
+  position: fixed;
+  top: 85px;
+  left: 170px;
+  right: 200px;
+  bottom: 8px;
+  border: 1px solid rgb(204, 204, 204);
+
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border-radius: 3px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.24), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+  min-width: 500px;
+}
+.nav {
+  position: fixed;
+  background-color: black;
+  width: 70%;
+  height: 55px;
+}
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Staatliches", cursive;
+  margin-top: -5%;
+  margin-left: 10%;
+  font-size: 60px;
+  color: #09c;
+}
+.inner-modal{
+  padding:0px 20px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.12);
+
+  
+}
+.img {
+  width: 280px;
+  height: 300px;
+  padding: 10px;
+}
+h4{
+  /* font-family: 'Big Shoulders Inline Display', cursive; */
+  /* font-family: 'Ranchers', cursive; */
+  /* font-family: 'Abril Fatface', cursive; */
+  font-family: 'Acme', sans-serif;
+  color: white;
+text-transform: uppercase;
+
+  font-size: 28px;
+  text-align: center;
+}
+p{
+  font-family: 'Bree Serif', serif;
+  color: white;
+font-weight: 400;
+
+  font-size: 25px;
+ 
+}
+
