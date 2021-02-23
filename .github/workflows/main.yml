@@ -1,4 +1,5 @@
 
+
 name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
@@ -34,4 +35,4 @@ jobs:
       - name: Installing Surge
         run: npm install -g surge
       - name: Deploying On Surge
-        run: surge ./build  http://saad-spacex.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build http://saad-spacex.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
