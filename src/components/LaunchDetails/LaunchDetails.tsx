@@ -21,9 +21,9 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
        
           Mission Name :
           {data.launch.launch_success ? (
-            <span className="green"> {data.launch.mission_name}</span>
+            <span className="greenh"> {data.launch.mission_name}</span>
           ) : (
-            <span className="red"> {data.launch.mission_name}</span>
+            <span className="redh"> {data.launch.mission_name}</span>
           )}
         </p>
 
@@ -31,9 +31,9 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
           {" "}
           LAUNCH SUCESS :
           {data.launch.launch_success ? (
-            <span className="green"> YES </span>
+            <span className="greenh"> YES </span>
           ) : (
-            <span className="red"> NO</span>
+            <span className="redh"> NO</span>
           )}
         </p>
 

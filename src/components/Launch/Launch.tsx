@@ -36,9 +36,9 @@ interface Props{
             (data.mission_name.length < 12 )  ?
 
             <li key={index} className="launches" >
-                {data.flight_number}. MISSION <div className={(data.launch_success) ? "green" : "red "} style={{float:"right"}}> 
+                {data.flight_number}. MISSION <div className={(data.launch_success) ? "green" : "red "} > 
                 {data.mission_name}  </div>
-                <button className="details" onClick={()=>openModel(data.flight_number)} > <MdExpandMore size={30}/>
+                <button className="details" onClick={()=>openModel(data.flight_number)} > <MdExpandMore size={25}/>
 
                 </button>
             </li>
@@ -61,10 +61,10 @@ interface Props{
               contentLabel='Modal'
             >
                 <span className="nav">
-                <button
+                <button className="close"
                           
                           onClick={(()=> closemodel)()}>
-                            <AiFillCloseCircle size={30} />
+                            <AiFillCloseCircle size={40} />
                         </button>
                         <h2 className="head">  LAUNCH DETAILS </h2>
                         </span>

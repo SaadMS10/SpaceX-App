@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 
 body {
   background-image: url("./images/background1.jpg");
@@ -31,28 +31,42 @@ ul {
 }
 
 .launches {
-  margin-top: 5%;
+  margin-top: 40%;
   padding: 2%;
   border: 1px solid #ccc;
   background-color: rgba(128, 128, 128, 0.5);
-  margin-bottom: -3%;
-  width: 70%;
-  margin-left: 10%;
-  font-size: 50px;
+  margin-bottom: -33%;
+  width: 80%;
+  margin-left: 3%;
+  
+  font-size: 40px;
+  text-align: center;
 }
+
 .green {
   color: green;
-
+  text-align: center;
 }
 .red {
+  color: red;
+  text-align: center;
+}
+.greenh {
+  color: green;
+  
+}
+.redh {
   color: red;
 
 }
 .details {
   float: left;
-  margin-top: 1.7%;
-  padding: -10;
-  margin-right: 1%;
+
+  margin-top: -31%;
+  padding: -20%;
+  
+
+ 
 }
 .details:hover {
   cursor: pointer;
@@ -62,12 +76,12 @@ ul {
   background-image: url("../src/images/background.jpg");
   background-size: cover;
   position: fixed;
-  top: 85px;
-  left: 170px;
-  right: 200px;
+  top: 160px;
+
   bottom: 8px;
   border: 1px solid rgb(204, 204, 204);
 
+  margin: 1%;
   overflow: auto;
   border-radius: 4px;
   outline: none;
@@ -76,52 +90,173 @@ ul {
 
   border-radius: 3px;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.24), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
-  min-width: 500px;
+  width: 380px;
 }
 .nav {
   position: fixed;
   background-color: black;
-  width: 70%;
-  height: 55px;
+  width: 94%;
+  height: 50px;
 }
 .head {
   text-align: center;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 20px;
   font-family: "Staatliches", cursive;
-  margin-top: -5%;
+  margin-top: -14%;
   margin-left: 10%;
-  font-size: 60px;
+  font-size: 50px;
   color: #09c;
 }
-.inner-modal{
-  padding:0px 20px 20px 20px;
+.inner-modal {
+  padding: 0px 20px 20px 20px;
   background-color: rgba(0, 0, 0, 0.12);
-
-  
+}
+.close:hover {
+  cursor: pointer;
 }
 .img {
-  width: 280px;
+  width: 350px;
   height: 300px;
-  padding: 10px;
+  padding-bottom: 10px;
 }
-h4{
+h4 {
   /* font-family: 'Big Shoulders Inline Display', cursive; */
   /* font-family: 'Ranchers', cursive; */
   /* font-family: 'Abril Fatface', cursive; */
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   color: white;
-text-transform: uppercase;
+  text-transform: uppercase;
 
   font-size: 28px;
   text-align: center;
 }
-p{
-  font-family: 'Bree Serif', serif;
+p {
+  font-family: "Bree Serif", serif;
   color: white;
-font-weight: 400;
+  font-weight: 400;
 
   font-size: 25px;
- 
 }
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: url("./images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  h1 {
+    position: fixed;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    /* font-family: 'Ranchers', cursive; */
+    font-family: "Staatliches", cursive;
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
 
+    font-size: 60px;
+
+    color: #09c;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .launches {
+    margin-top: 5%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-bottom: -3%;
+    width: 70%;
+    margin-left: 10%;
+    font-size: 50px;
+  
+    text-align:left;
+  }
+
+  .green {
+    color: green;
+    float: right;
+  }
+  .red {
+    color: red;
+    float: right;
+  }
+  .details {
+    float: left;
+    margin-top: 1.8%;
+    padding: -10;
+    margin-right: 1%;
+  }
+  .details:hover {
+    cursor: pointer;
+  }
+
+  .modal {
+    background-image: url("../src/images/background.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 75px;
+  
+    bottom: 3px;
+    border: 1px solid rgb(204, 204, 204);
+
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 12.5%;
+
+    border-radius: 3px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.24),
+      0 3px 12px 0 rgba(0, 0, 0, 0.12);
+   width: 70.5%;
+  }
+  .nav {
+    position: fixed;
+    background-color: black;
+    width: 70%;
+    height: 55px;
+  }
+  .head {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Staatliches", cursive;
+    margin-top: -6%;
+    margin-left: 10%;
+    font-size: 60px;
+    color: #09c;
+  }
+  .inner-modal {
+    padding: 0px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .img {
+    width: 280px;
+    height: 300px;
+    padding: 10px;
+  }
+  h4 {
+    /* font-family: 'Big Shoulders Inline Display', cursive; */
+    /* font-family: 'Ranchers', cursive; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: "Acme", sans-serif;
+    color: white;
+    text-transform: uppercase;
+
+    font-size: 28px;
+    text-align: center;
+  }
+  p {
+    font-family: "Bree Serif", serif;
+    color: white;
+    font-weight: 400;
+
+    font-size: 25px;
+  }
+}
